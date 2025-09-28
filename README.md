@@ -1,5 +1,5 @@
 # arthas-plus
-基于arthas和arthas-tunnel-server开发，在web页面查看arthas远程诊断java的信息
+基于arthas和arthas-tunnel-server开发，自动启动待诊断java程序所在的远程服务器上的arthas，并在web页面查看arthas远程诊断信息，无需登录java所在服务器。
 
 # 项目功能说明：
 使用python，基于arthas和arthas-tunnel-server开发，包含文件和功能如下：
