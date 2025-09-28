@@ -115,7 +115,7 @@
 	• 启动arthas服务的服务端已和各客户端做过免密。
 	• python需要3.9以上。
 	• 安装必要依赖sanic。（启动程序会自动安装环境）
-	• arthas tunnel server 版本为3.6.9。（3.7.1参数有变化，并加入验证。）
+	• arthas tunnel server 版本为3.6.9。（3.7.1参数有变化，未验证。）
 	https://github.com/alibaba/arthas/blob/master/tunnel-server/README.md
 	• arthas tunnel server中的index.html有修改，是关于取参和自动刷新。
 	• 需要修改arthas-tunnel-server的程序中的js，进行页面跳转传参。
