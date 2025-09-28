@@ -2,17 +2,20 @@
 基于arthas和arthas-tunnel-server开发，自动启动待诊断java程序所在的远程服务器上的arthas，并在web页面查看arthas远程诊断信息，无需登录java所在服务器。
 
 # 项目功能说明：
-使用python，基于arthas和arthas-tunnel-server开发，包含文件和功能如下：
+包含文件和功能如下：
 
 	• arthas_startup.py        #项目主程序.
 		○ 自行判断并安装相应的独立环境和依赖包（miniconda、sanic等）
 		○ 启动arthas tunnel server，退出后自动关闭arthas tunnel server。
 		○ 自动判断和推送arthas客户端和启动脚本到服务器。
+		○ 远程服务启动判断。
 		○ 启动和关闭arthas客户端。
-	• arthas_data.py        #数据包，包含远程服务器ip、启动arthas客户端用户、要监控的程序名。
+	• arthas_data.py        #数据包，包含远程服务器ip、启动arthas客户端用户、要监控的程序名等。
 	• start_arthas_client.sh   #arthas客户端启动脚本。
 	• start_arthas.log   #日志文件
-	• index.html         #主页，可以选择服务，并传参agentid到arthas tunnel server上。
+	• index.html         #主页，可以选择服务
+	• arthas_v2.html     # 快速诊断web主页面
+	• arthas_v2.py       # web页面快速诊断主程序
 
 # /opt/arthas目录：
 
@@ -112,7 +115,7 @@
 
 
 # 前提条件：
-	• 启动arthas服务的服务端已和各客户端做过免密。
+	• 启动arthas服务的服务端已和各客户端服务器做过用户ssh免密，免密用户需要具有sudo权限，发起诊断后远程用户根据arthas_data.py中定义的java启动用户，切换为相应的用户。
 	• python需要3.9以上。
 	• 安装必要依赖sanic。（启动程序会自动安装环境）
 	• arthas tunnel server 版本为3.6.9。（3.7.1参数有变化，未验证。）
