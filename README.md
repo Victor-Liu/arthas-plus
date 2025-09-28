@@ -152,17 +152,21 @@
 
 主页面
 
+
 <img width="957" height="797" alt="image" src="https://github.com/user-attachments/assets/e5e55c82-4fd6-43a6-af03-d1e45092064a" />
 
 web快捷查看，自动访问远程服务。
+
 
 <img width="968" height="531" alt="image" src="https://github.com/user-attachments/assets/01e302c2-d53f-4ca4-89b5-4ef26f1cc3e6" />
 
 web快捷查看，具体java诊断信息。
 
+
 <img width="956" height="536" alt="image" src="https://github.com/user-attachments/assets/ecb43243-1ca9-473b-ba84-ba2b4b9a2ba7" />
 
 arthas-tunnel-server，自动跳转到待诊断的服务上。
+
 
 <img width="1036" height="240" alt="image" src="https://github.com/user-attachments/assets/3b3e2aa0-2d59-4d1e-9494-58c6b815b89b" />
 
