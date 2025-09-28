@@ -2,7 +2,7 @@
 基于arthas和arthas-tunnel-server开发，在web页面查看arthas远程诊断java的信息
 
 # 项目功能说明：
-使用python开发，基于arthas和arthas-tunnel-server开发，包含文件和功能如下：
+使用python，基于arthas和arthas-tunnel-server开发，包含文件和功能如下：
 	• arthas_startup.py        #项目主程序.
 		○ 自行判断并安装相应的独立环境和依赖包（miniconda、sanic等）
 		○ 启动arthas tunnel server，退出后自动关闭arthas tunnel server。
